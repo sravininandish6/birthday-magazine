@@ -128,7 +128,7 @@ export default function App() {
         {/* PAGE 2 */}
         <Page className="page2" title="ಸಪ್ತ ಸಾಗರದಾಚೆ ಎಲ್ಲೋ!">
           <img
-            src="/images/IMG-20241211-WA0033.jpg"
+            src="./images/IMG-20241211-WA0033.jpg"
             alt="Birthday Photo"
             style={{
               maxWidth: "90%",
@@ -148,7 +148,7 @@ export default function App() {
         {/* PAGE 3 */}
         <Page className="page3" title="ಈ ಭೂಮಿ ಬಣ್ಣದ ಬುಗುರಿ!">
           <img
-            src="/images/IMG_7975.jpeg"
+            src="./images/IMG_7975.jpeg"
             alt="Inspiration Photo"
             style={{
               maxWidth: "50%",
@@ -166,7 +166,7 @@ export default function App() {
         {/* PAGE 4 */}
         <Page className="page4" title="ಒಂದೊಂದೇ ಬಚ್ಚಿಟ್ಟ ಮಾತು! ">
           <img
-            src="/images/Snapchat-848601365.jpg"
+            src="./images/Snapchat-848601365.jpg"
             alt="Gratitude Photo"
             style={{
               maxWidth: "40%",
@@ -184,7 +184,7 @@ export default function App() {
         {/* PAGE 5 */}
         <Page className="page5" title="ಮೆಲ್ಲಗೆ ಧ್ಯಾನಿಸು!">
          <img
-  src="/images/IMG_1234.jpeg"
+  src="./images/IMG_1234.jpeg"
   alt="New Chapter Photo"
   style={{
     maxWidth: "50%",
