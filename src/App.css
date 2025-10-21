@@ -1,0 +1,99 @@
+/* ============================================================
+   🌿 GLOBAL SETUP — Warm, Vintage Aesthetic for All Pages
+   ============================================================ */
+body {
+  margin: 0;
+  background-color: #b37e9dc4; /* Outer book background (dark brown) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #3b2f2f;
+}
+
+/* ============================================================
+   📖 BOOK CONTAINER — The overall book view
+   ============================================================ */
+.magazine-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap; /* Allows more than 2 pages to stack or line up */
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  background-color: #fef8e7; /* Base light tone */
+  border-radius: 6px;
+  border: 4px solid #3b2f2f;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.8),
+    inset 0 0 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transform: perspective(1800px) rotateX(7deg);
+}
+
+/* ============================================================
+   📚 BOOK SPINE — The center divider
+   ============================================================ */
+.magazine-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background: linear-gradient(to bottom, #4c3c32, #2a201b, #4c3c32);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+
+/* ============================================================
+   📄 BASE PAGE STYLE — Common background & typography
+   ============================================================ */
+.page {
+  flex: 0 0 50%;
+  position: relative;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow-y: auto;
+
+  /* Vintage paper gradient */
+  background: radial-gradient(circle at 50% 50%, #fef8e7 0%, #f7e6c4 30%, #e3cfa2 80%, #d6b67a 100%);
+  background-blend-mode: normal;
+  border: none;
+
+  /* Paper texture */
+  background-image:
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png"),
+    radial-gradient(ellipse at 70% 20%, rgba(255, 255, 200, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 30% 80%, rgba(200, 150, 50, 0.15) 0%, transparent 60%);
+  background-size: auto, 100% 100%, 100% 100%;
+
+  /* Shadows & text tone */
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.4);
+  color: #4a382d;
+  text-shadow: 0 0 1px #4a382d33;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-family: "Georgia", "Times New Roman", serif;
+  border-radius: 10px;
+}
+
+/* ============================================================
+   🌾 VINTAGE BACKGROUND — Unified Style for All Pages
+   ============================================================ */
+.page1, .page2, .page3, .page4, .page5, .page6 {
+  
+  background: url("https://www.transparenttextures.com/patterns/aged-paper.png") repeat;
+  background-color: lch(89.38% 8.38 283.75 / 0.884);
+  border: 2px solid rgba(114, 98, 77, 0.158);
+  border-radius: 12px;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.3);
+  font-family: "Georgia", serif;
+  color: #3e2723;
+  text-shadow: 0 0 1px #4a382d33;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
