@@ -15,7 +15,7 @@ const Page = React.forwardRef(({ className, title, children }, ref) => {
         boxSizing: "border-box",
         height: "100%",
         width: "100%",
-        background: "url('/images/vintage-paper-texture.jpg') center/cover no-repeat",
+        background: "url('./images/vintage-paper-texture.jpg') center/cover no-repeat",
         border: "1px solid #bca77d",
         boxShadow: "inset 0 0 30px rgba(0,0,0,0.2)",
         opacity: 0,
@@ -43,8 +43,8 @@ export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [message, setMessage] = useState("");
 
-  const myUsername = "shashanksiddarth@gmail.com";
-  const myPassword = "1709@2024";
+  const myUsername = "topperjayanthi@gmail.com";
+  const myPassword = "shashank@22";
 
   const flipBookRef = useRef();
   const flipSound = useRef(new Audio("/sounds/page-flip.mp3")); // Page flip sound
@@ -128,7 +128,7 @@ export default function App() {
         {/* PAGE 2 */}
         <Page className="page2" title="ಸಪ್ತ ಸಾಗರದಾಚೆ ಎಲ್ಲೋ!">
           <img
-            src="./images/IMG-20241211-WA0033.jpg"
+            src="/images/IMG-20241211-WA0033.jpg"
             alt="Birthday Photo"
             style={{
               maxWidth: "90%",
@@ -148,7 +148,7 @@ export default function App() {
         {/* PAGE 3 */}
         <Page className="page3" title="ಈ ಭೂಮಿ ಬಣ್ಣದ ಬುಗುರಿ!">
           <img
-            src="./images/IMG_7975.jpeg"
+            src="/images/IMG_7975.jpeg"
             alt="Inspiration Photo"
             style={{
               maxWidth: "50%",
@@ -166,7 +166,7 @@ export default function App() {
         {/* PAGE 4 */}
         <Page className="page4" title="ಒಂದೊಂದೇ ಬಚ್ಚಿಟ್ಟ ಮಾತು! ">
           <img
-            src="./images/Snapchat-848601365.jpg"
+            src="/images/Snapchat-848601365.jpg"
             alt="Gratitude Photo"
             style={{
               maxWidth: "40%",
@@ -184,7 +184,7 @@ export default function App() {
         {/* PAGE 5 */}
         <Page className="page5" title="ಮೆಲ್ಲಗೆ ಧ್ಯಾನಿಸು!">
          <img
-  src="./images/IMG_1234.jpeg"
+  src="/images/IMG_1234.jpeg"
   alt="New Chapter Photo"
   style={{
     maxWidth: "50%",
